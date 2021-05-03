@@ -1,0 +1,214 @@
+<html>
+
+<head>
+	<title>Add Account | Registration </title>
+	<style>
+		h1 {
+			text-align: center;
+		}
+
+		input[type="radio"] {
+			margin-left: 10px;
+		}
+
+		.identity {
+
+			padding-left: 5 px;
+
+		}
+
+		.button {
+
+			display: inline-block;
+			background: #3333FF;
+			color: white;
+			padding: 8px 30px;
+			margin: 20px 0;
+			border-radius: 20px;
+			transition: background 0.5s;
+
+
+		}
+
+		.button:hover {
+
+			background: #33FF58;
+
+
+		}
+
+		.registration {
+
+			text-align: center;
+			font-size: 24px;
+			color: red;
+
+		}
+
+		.registration:hover {
+
+			color: blue;
+			transition: background 0.5s;
+
+		}
+	</style>
+</head>
+
+<body>
+
+	<h3 align=ce class="registration">Registration</h3>
+	<script src="https://cdn.jsdelivr.net/npm/web3@1.2.8/dist/web3.js"></script>
+	<script src="bundle.js"></script>
+	<a href="index.html" class="button"><b>Home</b> </a>
+	<fieldset>
+
+		<legend>Enter your details </legend>
+		<br>
+		<form>
+			<table style="margin:10px;">
+				<!-- Name -->
+
+				<tr>
+					<td>Name of the Person:</td>
+					<td><input type="text" class="identity" id="name" name="name" placeholder="Enter your Name"
+							required="" /></td>
+				</tr>
+				<!-- Date of Birth -->
+
+				<tr>
+					<td> Date of Birth : </td>
+					<td><input type="date" class="identity" id="birthday" name="birthday" required="" /></td>
+				</tr>
+
+				<!-- Gender -->
+
+				<tr>
+					<td><label for="gender">Gender:</label>
+					<td class="identity">
+						<select name="gender" id="gender">
+							<option value="None">Select</option>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+							<option value="Other">Other</option>
+						</select>
+					</td>
+				</tr>
+				<!-- Contact Number -->
+
+				<tr>
+					<td>Contact Number:</td>
+					<td><input type="number" class="identity" id="contact_no" name="contact_no"
+							placeholder="Enter your Contact Number" required="" /></td>
+				</tr>
+				<!-- Email -->
+
+				<tr>
+					<td>Email:</td>
+					<td><input type="text" class="identity" id="email_id" name="email_id" placeholder="Enter your Email"
+							required="" /></td>
+				</tr>
+
+				<!-- Bloog Group -->
+				<tr>
+					<td><label for="bloodgroup">Blood Group:</label>
+					<td class="identity">
+						<select name="bloodgroup" id="bloodgroup">
+							<option value="None">Select</option>
+							<option value="O+">O+ve</option>
+							<option value="O-">O-ve</option>
+							<option value="A+">A+ve</option>
+							<option value="A-">A-ve</option>
+							<option value="B+">B+ve</option>
+							<option value="B-">B-ve</option>
+						</select>
+					</td>
+
+				</tr>
+
+				<!-- State -->
+				<tr>
+
+					<td><label for="state">State: </label></td>
+					<td class="identity">
+						<select name="state" id="state">
+							<option value="None">Select</option>
+							<option value="AP">Andhra Pradesh</option>
+							<option value="AR">Arunachal Pradesh</option>
+							<option value="AS">Assam</option>
+							<option value="BH">Bihar</option>
+							<option value="KA">Karnataka</option>
+							<option value="KL">Kerala</option>
+							<option value="TN">Tamil Nadu</option>
+							<option value="TS">Telangana</option>
+							<option value="MH">Maharashtra</option>
+							<option value="MP">Madhya Pradesh</option>
+							<option value="HP">Himachal Pradesh</option>
+							<option value="UP">Uttar Pradesh</option>
+							<option value="DL">National Capital Region</option>
+							<option value="GA">Goa</option>
+							<option value="RJ">Rajasthan</option>
+							<option value="PB">Punjab</option>
+							<option value="OD">Odisha</option>
+							<option value="JH">Jharkhand</option>
+							<option value="WB">West Bengal</option>
+							<option value="NL">Nagaland</option>
+							<option value="UK">Utharakhand</option>
+							<option value="SK">Sikkim</option>
+							<option value="CH">Chattisgarh</option>
+							<option value="HR">Haryana</option>
+							<option value="GJ">Gujarat</option>
+						</select>
+
+					</td>
+
+				</tr>
+				<tr>
+					<td>City:</td>
+					<td><input type="text" class="identity" id="city" name="city" placeholder="Enter your City"
+							required="" /></td>
+				</tr>
+
+
+
+				<!-- Account ID -->
+
+				<tr>
+					<td>Account ID:</td>
+					<td><input type="text" class="identity" id="accountid" name="accountid"
+							placeholder="Enter your Account ID" required="" /></td>
+				</tr>
+
+				<!-- Private Key -->
+
+				<tr>
+					<td>Private Key:</td>
+					<td><input type="text" class="identity" id="privatekey" name="privatekey"
+							placeholder="Enter your Private Key" required="" /></td>
+				</tr>
+
+
+
+
+				<tr>
+					<td><input type="button" id="submitBtnIndex" value="Submit"></td>
+				</tr>
+
+			</table>
+			<h4> Transaction Id: <a href="">
+					<div id="result"></div>
+				</a></h4>
+			<h4> User ID: <a href="">
+					<div id="result2"></div><a /a></h4>
+			<h4> Secret ID: <a href="">
+					<div id="result3"></div><a /a></h4>
+
+
+			<a href="verify.html" class="button"><b>Find Peer</b> </a>
+
+			<a href="secret_id.html" class="button"><b>Find Confidential Details</b> </a>
+		</form>
+	</fieldset>
+
+</body>
+
+</html>
